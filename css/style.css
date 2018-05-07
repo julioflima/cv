@@ -11,6 +11,7 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0 !important;
     font-family: 'Open Sans', sans-serif;
 }
@@ -25,7 +26,8 @@ div {
 }
 
 main {
-    width: 955px;
+    overflow: hidden;
+    width: 915px;
     margin: auto;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -80,11 +82,12 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
     color: #FFF;
     padding-left: 3vw;
-    padding: 5vh
+    padding: 5vh;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -92,24 +95,11 @@ nav ul li a:hover {
 }
 
 article {
-    float: left;
-    margin: 30px 20px;
-    width: 600px
-}
-
-article header hgroup h1 {
-    margin: 0;
-}
-
-article header hgroup h5 {
-    margin: 0;
-    font-size: 1.1em;
-    color: #ccc;
-    font-weight: 100;
+    width: 100%;
+    display: inline-flex;
 }
 
 aside {
-    float: left;
     width: 230px;
     border-top: 1px solid var(--color-one);
     border-bottom: 1px solid var(--color-one);
@@ -117,15 +107,18 @@ aside {
     font-style: italic;
     margin-right: 20px;
     margin-bottom: 20px;
-    background: url(../imagens/aspas.gif) no-repeat;
+    background: url(/images/aspas.gif) no-repeat;
 }
 
 aside p {
     color: #999;
 }
 
-section{
-    clear: both;
+section {
+    overflow: hidden;
+    width: inherit;
+    height: 100%;
+    padding: 20px;
 }
 
 footer {
@@ -137,15 +130,18 @@ footer {
     background-color: var(--color-two);
     padding: 5px;
     color: var(--color-seven);
+    bottom: 0 !important;
 }
 
 hr {
-    width: 15%;
+    width: 10%;
     background: var(--color-transition);
-    height: .1vh;
+    height: .2vh;
 }
 
 h2 {
+    clear: both;
+    position: inherit;
     font-size: 2.0em;
     padding-top: 2vh;
     text-align: center;
@@ -154,6 +150,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: .25em;
+    text-align: center;
 }
 
 h1 {
@@ -166,7 +163,10 @@ h4 {
     margin: 0 5px;
 }
 
-img {
+    border-radius: 50%;
+    height: auto;
+    width: 15em;
+}img {
     border-radius: 50%;
     height: auto;
     width: 15em;
@@ -174,13 +174,20 @@ img {
 
 #support {
     float: right;
-    width: 300px;
-    margin-top: 30px
+    right: 20%;
+    padding: 0 3em 0 0;
 }
 
-#controller {
-    clear: both;
+#skills {
+    text-align: center;
+    height: 30vh;
 }
+
+#programming-lang {
+    text-align: center;
+    height: 30vh;
+}
+
 
 .icon {
     font-size: 1.5em !important;
@@ -188,4 +195,38 @@ img {
 
 a {
     text-decoration: inherit;
+}
+
+.whole {
+    background: var(--color-transition);
+}
+
+.whole h2 {
+    color: var(--color-four);
+}
+
+.whole hr {
+    width: 6em;
+    background: var(--color-four);
+}
+.whole article{
+    width: 70%;
+    margin: auto;
+}
+
+.box{
+    text-align: center;
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    margin: auto;
+    font-size: .8em;
+    background: var(--color-four);
+    color: var(--color-six);
+}
+
+.box p{
+    margin: 3vh 0 0 0 ;
+    text-align: center;
+    vertical-align: middle
 }
