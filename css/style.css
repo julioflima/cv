@@ -1,7 +1,7 @@
 :root {
     --color-one: rgba(153, 148, 226, 1);
     --color-two: black;
-    --color-three: rgba(148, 179, 226.1);
+    --color-three: rgba(148, 179, 226, .1);
     --color-four: rgb(255, 255, 255);
     --color-five: rgba(161, 102, 216, 0.815);
     --color-six: rgba(108, 102, 216, 0.815);
@@ -17,7 +17,7 @@ body {
 }
 
 html {
-    background-color: var(--color-four)
+    background-color: var(--color-four);
 }
 
 div {
@@ -33,6 +33,29 @@ main {
     margin-bottom: 0 !important;
     background-color: #FFF !important;
     font-family: Arial, Helvetica, sans-serif
+}
+
+form {
+    width: 100vw;
+    padding: 6px 12px;
+}
+
+textarea {
+}
+
+input {}
+
+input[type=submit] {
+    padding: 5px 15px;
+    cursor: pointer;
+    width: 40% !important;
+    border: 3px solid var(--color-four);
+    background: none;
+    color: var(--color-four);
+}
+input[type=submit]:hover{
+    color: var(--color-six);
+    background: var(--color-four);
 }
 
 header h1 {
@@ -64,6 +87,15 @@ content {
     background-size: auto;
 }
 
+.overlay h2 {
+    color: var(--color-four);
+}
+
+.overlay hr {
+    width: 6em;
+    background: var(--color-four);
+}
+
 nav {
     text-align: center;
     background-color: var(--color-two);
@@ -86,7 +118,6 @@ nav ul li a {
     text-decoration: none;
     color: #FFF;
     padding-left: 3vw;
-    padding: 5vh;
     text-transform: uppercase;
 }
 
@@ -163,10 +194,7 @@ h4 {
     margin: 0 5px;
 }
 
-    border-radius: 50%;
-    height: auto;
-    width: 15em;
-}img {
+img {
     border-radius: 50%;
     height: auto;
     width: 15em;
@@ -180,14 +208,27 @@ h4 {
 
 #skills {
     text-align: center;
-    height: 30vh;
+    background: url('/images/eng.jpg')no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 0;
 }
 
 #programming-lang {
     text-align: center;
-    height: 30vh;
+    background: url('/images/prog.png')no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 0;
 }
 
+#contact-me {
+    text-align: center;
+    background: url('/images/email.jpeg')no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 0;
+}
 
 .icon {
     font-size: 1.5em !important;
@@ -208,13 +249,15 @@ a {
 .whole hr {
     width: 6em;
     background: var(--color-four);
+    margin-bottom: 100px;
 }
-.whole article{
-    width: 70%;
+
+.whole article {
+    width: 70% !important;
     margin: auto;
 }
 
-.box{
+.box {
     text-align: center;
     border-radius: 50%;
     height: 8vh;
@@ -225,8 +268,24 @@ a {
     color: var(--color-six);
 }
 
-.box p{
-    margin: 3vh 0 0 0 ;
+.box p {
+    margin: 3vh 0 0 0;
     text-align: center;
     vertical-align: middle
+}
+
+.form-control {
+    font-family: monospace;
+    letter-spacing: .1em;
+    margin: 20px 0 0 0;
+    width: 60%;
+    font-size: 2em;
+    border-radius: 10px;
+    border: none;
+    padding: 6px 12px;
+}
+
+.form-control::selection {
+    background: var(--color-five);
+    color: var(--color-four);
 }

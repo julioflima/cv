@@ -45,9 +45,11 @@
             <li>
                 <a href="#web-dev">Web Developer</a>
             </li>
-
             <li>
                 <a href="#contact-me">Contact-me</a>
+            </li>
+            <li>
+                <a href="#see-me">See-me</a>
             </li>
             programing-lang
         </ul>
@@ -88,14 +90,10 @@
 
     </main>
     <section class="whole " id="skills">
-        <h2>skills</h2>
-        <hr>
-        <article>
+        <div class="overlay">
+            <h2>skills</h2>
+            <hr>
             <!-- article -->
-            <br>
-            <br>
-            <br>
-            <br>
             <article>
                 <div class="box">
                     <p>Auto Cad</p>
@@ -120,6 +118,8 @@
                 </div>
             </article>
             <!-- end article -->
+        </div>
+
     </section>
     <main>
         <section id="electrical-eng">
@@ -224,14 +224,10 @@
         </section -->
     </main>
     <section class="whole " id="programming-lang">
-        <h2>programming languages</h2>
-        <hr>
-        <article>
+        <div class="overlay">
+            <h2>programming languages</h2>
+            <hr>
             <!-- article -->
-            <br>
-            <br>
-            <br>
-            <br>
             <article>
                 <div class="box">
                     <p>C</p>
@@ -256,9 +252,9 @@
                 </div>
             </article>
             <!-- end article -->
+        </div>
     </section>
     <main>
-
         <section id="web-dev">
             <h2>Web Developer</h2>
             <hr>
@@ -269,7 +265,7 @@
                         <li>
                             <p>
                                 2018: </p>
-                                Web platform to buy trip insurance. </p>
+                            Web platform to buy trip insurance. </p>
                             <p>
                                 Store to Nailsup, SPA Business.
                             </p>
@@ -286,7 +282,7 @@
                             <p>
                                 2015: </p>
                             <p>
-                                    Software (C#) and Electronic Developer of telemetry system to Fórmula SAE.
+                                Software (C#) and Electronic Developer of telemetry system to Fórmula SAE.
                             </p>
                         </li>
                     </ul>
@@ -295,11 +291,26 @@
             <!-- end article -->
         </section>
 
-
-
     </main>
+
+    <section class="whole" id="contact-me">
+        <div class="overlay">
+            <h2>Contact-me</h2>
+            <hr>
+            <article>
+                <!-- article -->
+                <form onsubmit="return onSubmit()">
+                    <input id="name" id="name" class="form-control" placeholder="Name">
+                    <input id="email" type="email" id="email" class="form-control" placeholder="Email">
+                    <textarea id="message" class="form-control" name="mensage" rows="5" placeholder="Message"></textarea>
+                    <input id="submit" class="form-control" type="submit" value="Submit">
+                </form>
+            </article>
+        </div>
+        <!-- end article -->
+    </section>
     <!-- end main -->
-    <footer id="contact-me">
+    <footer class="" id="see-me">
         <!-- bottom -->
         <nav>
             <!-- address -->
@@ -331,5 +342,6 @@
     </footer>
     <!-- end bottom -->
 </body>
+<script src="js/main.js"></script>
 
 </html>
