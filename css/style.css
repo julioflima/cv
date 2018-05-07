@@ -1,0 +1,164 @@
+:root {
+    --color-one: rgba(153, 148, 226, 1);
+    --color-two: black;
+    --color-three: rgba(148, 179, 226.1);
+    --color-four: rgb(255, 255, 255);
+    --color-five: rgba(161, 102, 216, 0.815);
+    --color-six: rgba(108, 102, 216, 0.815);
+    --color-seven: rgba(169, 167, 199, 0.815);
+    --color-sucess: linear-gradient(45deg, rgb(36, 235, 145), rgb(2, 243, 135));
+    --color-transition: linear-gradient(45deg, var(--color-five), var(--color-six));
+}
+
+body {
+    margin: 0 !important;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    background-color: var(--color-four)
+}
+
+main {
+    width: 955px;
+    margin: auto;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: #FFF !important;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header h1 {
+    color: inherit;
+}
+
+header p {
+    font-size: 20px;
+    letter-spacing: 2px !important;
+    margin: 0;
+    color: inherit;
+}
+
+content {
+    width: 100vw;
+    color: var(--color-four);
+    text-align: center;
+}
+
+.pic {
+    background: url('/images/header.jpg')no-repeat center center;
+    background-size: cover;
+}
+
+.overlay {
+    padding: 250px 0;
+    background: var(--color-transition);
+    background-size: auto;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--color-two);
+    height: 10vh;
+}
+
+nav ul {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 2.2em
+}
+
+nav ul li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #FFF;
+    padding-left: 3vw;
+    padding: 5vh
+}
+
+nav ul li a:hover {
+    color: var(--color-one);
+    
+}
+
+article {
+    float: left;
+    margin: 30px 20px;
+    width: 600px
+}
+
+article header hgroup h1 {
+    margin: 0;
+}
+
+article header hgroup h5 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #ccc;
+    font-weight: 100;
+}
+
+aside {
+    float: left;
+    width: 230px;
+    border-top: 1px solid var(--color-one);
+    border-bottom: 1px solid var(--color-one);
+    padding: 40px 10px 0;
+    font-style: italic;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: url(../imagens/aspas.gif) no-repeat;
+}
+
+aside p {
+    color: #999;
+}
+
+footer {
+    clear: both;
+    width: 100vw;
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+    background-color: var(--color-two);
+    padding: 5px;
+    color: var(--color-seven);
+}
+
+h1,
+h2,
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #C63;
+    font-style: italic;
+    letter-spacing: -0.05em
+}
+
+h1 {
+    font-size: 2.6em;
+    margin: 0 5px;
+}
+
+h4 {
+    font-size: 1.6em;
+    margin: 0 5px;
+}
+
+#support {
+    float: right;
+    width: 300px;
+    margin-top: 30px
+}
+
+#controller {
+    clear: both;
+}
+
+.icon{
+    font-size: 1.5em !important;
+}
