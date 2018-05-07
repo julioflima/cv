@@ -77,7 +77,7 @@ content {
 }
 
 .pic {
-    background: url('/images/header.jpg')no-repeat center center;
+    background: url('../images/header.jpg')no-repeat center center;
     background-size: cover;
 }
 
@@ -208,7 +208,7 @@ img {
 
 #skills {
     text-align: center;
-    background: url('/images/eng.jpg')no-repeat center center;
+    background: url('../images/eng.jpg')no-repeat center center;
     background-size: cover;
     color: white;
     padding: 0;
@@ -216,7 +216,7 @@ img {
 
 #programming-lang {
     text-align: center;
-    background: url('/images/prog.png')no-repeat center center;
+    background: url('../images/prog.png')no-repeat center center;
     background-size: cover;
     color: white;
     padding: 0;
@@ -224,7 +224,7 @@ img {
 
 #contact-me {
     text-align: center;
-    background: url('/images/email.jpeg')no-repeat center center;
+    background: url('../images/email.jpeg')no-repeat center center;
     background-size: cover;
     color: white;
     padding: 0;
