@@ -29,18 +29,6 @@ function onSubmit() {
         alert('You have to fill the field email correctly, including and "@" and a"domain.exemple".');
         return false;
     }
-
-    Email.send(
-        emailInput.value,
-        emailTo,
-        subjectTo,
-        messageInput.value, {
-            token: tokenTo,
-            callback: function done(message) {
-                alert("send")
-            }
-        }
-    );
 }
 
 
