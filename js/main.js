@@ -4,7 +4,7 @@ var messageInput = document.querySelector("#message");
 var submitButton = document.querySelector("#submit");
 var emailTo = "julio_flima@hotmail.com";
 var subjectTo = "CV Git";
-var tokenTo = "ae108ab8-3746-49fb-a1c9-15978486cda4"
+var tokenTo = "a56cb4a3-c166-4d96-b5ec-40345a5b311b"
 
 
 function onSubmit() {

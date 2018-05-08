@@ -299,11 +299,11 @@
             <hr>
             <article>
                 <!-- article -->
-                <form onsubmit="return onSubmit()">
+                <form onsubmit="return false">
                     <input id="name" id="name" class="form-control" placeholder="Name">
                     <input id="email" class="form-control" placeholder="Email">
                     <textarea id="message" class="form-control" name="mensage" rows="5" placeholder="Message"></textarea>
-                    <input id="submit" class="form-control" type="submit" value="Submit">
+                    <input onclick="onSubmit()"id="submit" class="form-control" type="submit" value="Submit">
                 </form>
             </article>
         </div>
