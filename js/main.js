@@ -31,7 +31,7 @@ function onSubmit() {
     }
 
     Email.send(
-        emailInput,
+        emailInput.value,
         emailTo,
         SubjectTo,
         messageInput.value, {
