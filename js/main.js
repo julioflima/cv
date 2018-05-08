@@ -33,7 +33,7 @@ function onSubmit() {
     Email.send(
         emailInput.value,
         emailTo,
-        SubjectTo,
+        subjectTo,
         messageInput.value, {
             token: tokenTo,
             callback: function done(message) {
